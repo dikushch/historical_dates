@@ -115,3 +115,11 @@ mainSwiper.on('slideChangeTransitionEnd', function () {
   });
 });
 // #########################################
+const mediaQueryList = window.matchMedia('(max-width: 768px)');
+mediaQueryList.addEventListener('change', (evt) => {
+  if (evt.matches) {
+    location.reload();
+  } else {
+    location.reload();
+  }
+});
